@@ -1,21 +1,31 @@
+<!-- 21 feilkoder dukket opp i valideringsprogrammet -->
+
+
 <!DOCTYPE html>
+<!-- Manglet <!DOCTYPE html> element -->
 <html lang="no">
+<!-- Lagt til lang="no" for norsk språktilgengelighet på nettsiden -->
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Manglet " for å lukke href linken til stilarket -->
     <title>Web eksamen del 1</title>
 </head>
+<!-- Flyttet <head> elementet over <body> elementet -->
 
 <body>
     <nav>
         <h3>Logo</h3>
+        <!-- Endret logo teksten fra <h1> til <h3> fordi den er mindre prioritert.  -->
         <ul>
             <li> <a href="#">Boatswain schooner</a></li>
             <li> <a href="#">Account lookout</a></li>
             <li> <a href="#">Sail ho shrouds</a></li>
         </ul>
+        <!-- Manglet <ul> element før <li> elementer -->
     </nav>
+    <!-- Flyttet <nav> elemtentet over <header> elementet for korrekt utforming -->
     <header>
 
         <h1>Yar Pirate Ipsum</h1>
@@ -26,10 +36,12 @@
     <main>
         <article>
             <h2>Prow scuttle</h2>
+            <!-- Endret alle overskriftene i article elementene til <h2> -->
             <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.
             </p>
             <a href="#">Les mer</a>
         </article>
+        <!-- Manglet closing tag til <article> elementet -->
         <article>
             <h2>Jack Tar transom</h2>
             <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.
@@ -43,6 +55,7 @@
             <a href="#">Les mer</a>
         </article>
     </main>
+    <!-- Unødvendig id av main, endret til vanlig <main> element -->
     <footer>
         <span>Twitter</span>
         <span>Facebook</span>
