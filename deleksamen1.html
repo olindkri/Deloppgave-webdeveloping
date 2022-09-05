@@ -2,28 +2,28 @@
 
 
 <!DOCTYPE html>
-<!-- Manglet <!DOCTYPE html> element -->
+<!-- Manglet <!DOCTYPE html> element, denne forteller nettleseren hvilke dokument den jobber med. -->
 <html lang="no">
 <!-- Lagt til lang="no" for norsk språktilgengelighet på nettsiden -->
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Manglet " for å lukke href linken til stilarket -->
+    <!-- Manglet " for å lukke href linken til stilarket, dette skapte følgefeil -->
     <title>Web eksamen del 1</title>
 </head>
-<!-- Flyttet <head> elementet over <body> elementet -->
+<!-- Flyttet <head> elementet over <body> elementet, denne skal alltid være over body -->
 
 <body>
     <nav>
         <h3>Logo</h3>
-        <!-- Endret logo teksten fra <h1> til <h3> fordi den er mindre prioritert.  -->
+        <!-- Endret logo teksten fra <h1> til <h3> fordi den er mindre prioritert i forhold til andre overskrifter.  -->
         <ul>
             <li> <a href="#">Boatswain schooner</a></li>
             <li> <a href="#">Account lookout</a></li>
             <li> <a href="#">Sail ho shrouds</a></li>
         </ul>
-        <!-- Manglet <ul> element før <li> elementer -->
+        <!-- Manglet <ul> element ovenfor <li> elementer, <li> elementer har ingen funksjon uten <ul> elementet. <ul> deklarerer en liste, <li> lager punkter. -->
     </nav>
     <!-- Flyttet <nav> elemtentet over <header> elementet for korrekt utforming -->
     <header>
@@ -36,7 +36,7 @@
     <main>
         <article>
             <h2>Prow scuttle</h2>
-            <!-- Endret alle overskriftene i article elementene til <h2> -->
+            <!-- Endret alle overskriftene i article elementene til <h2>, disse er mindre prioritert i forhold til hovedoverskriften -->
             <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.
             </p>
             <a href="#">Les mer</a>
@@ -55,7 +55,7 @@
             <a href="#">Les mer</a>
         </article>
     </main>
-    <!-- Unødvendig id av main, endret til vanlig <main> element -->
+    <!-- Unødig div id av main <div id="main"> , endret til vanlig <main> element -->
     <footer>
         <span>Twitter</span>
         <span>Facebook</span>
