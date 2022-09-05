@@ -1,6 +1,5 @@
 <!-- 21 feilkoder dukket opp i valideringsprogrammet -->
 
-
 <!DOCTYPE html>
 <!--Error: Start tag seen without seeing a doctype first. Expected <!DOCTYPE html>.
     Manglet <!DOCTYPE html> element, denne forteller nettleseren hvilke dokument den jobber med. -->
@@ -10,6 +9,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--Error: Attribute #" not allowed on element link at this point. 
         Manglet " for å lukke href linken til stilarket, dette skapte følgefeil -->
@@ -33,11 +33,11 @@
     </nav>
     <!-- Flyttet <nav> elemtentet over <header> elementet for korrekt utforming, dette var nok bare mitt problem... -->
     <header>
-
         <h1>Yar Pirate Ipsum</h1>
         <p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast
             quarter crow's nest nipperkin grog yardarm hempen halter furl.</p>
-        <a class="button">Les mer</a>
+        <a class="button" href="#">Les mer</a>
+        <!-- Manglet href attribut, knappen hadde opprinelig ingen funksjon -->
     </header>
     <main>
         <article>
@@ -65,9 +65,10 @@
     </main>
     <!-- Unødvendig div id av main <div id="main"> , endret til vanlig <main> element -->
     <footer>
-        <span>Twitter</span>
-        <span>Facebook</span>
-        <span>Instagram</span>
+        <a>Twitter</a>
+        <a>Facebook</a>
+        <a>Instagram</a>
+        <!-- Span er ikke nødvendig her -->
     </footer>
 </body>
 
